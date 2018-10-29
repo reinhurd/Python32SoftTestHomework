@@ -21,16 +21,16 @@ class TestAddUser(unittest.TestCase):
     def logout(self, wd):
         wd.find_element_by_link_text("Logout").click()
 
-    def create_new_user(self, wd, UserInfo):
+    def create_new_user(self, wd, userinfo):
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
-        wd.find_element_by_name("firstname").send_keys(UserInfo.firstname)
+        wd.find_element_by_name("firstname").send_keys(userinfo.firstname)
         wd.find_element_by_name("middlename").click()
         wd.find_element_by_name("middlename").clear()
-        wd.find_element_by_name("middlename").send_keys(UserInfo.middlename)
+        wd.find_element_by_name("middlename").send_keys(userinfo.middlename)
         wd.find_element_by_name("lastname").click()
         wd.find_element_by_name("lastname").clear()
-        wd.find_element_by_name("lastname").send_keys(UserInfo.lastname)
+        wd.find_element_by_name("lastname").send_keys(userinfo.lastname)
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
 
     def open_add_user_page(self, wd):
