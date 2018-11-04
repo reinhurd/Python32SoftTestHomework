@@ -7,9 +7,13 @@ class SessionHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("Logout").click()
 
-    def login(self, username, password):
+    def login(self, username, password, first_time_open_homepage=False):
+        '''
+        :param first_time_open_homepage: Костыль для бага невыполнения logout в Firefox
+        '''
         wd = self.app.wd
-        self.app.open_home_page()
+        if first_time_open_homepage:
+            self.app.open_home_page()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys(username)
         wd.find_element_by_name("pass").clear()
