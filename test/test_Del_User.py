@@ -1,5 +1,5 @@
 def test_del_user(app):
-    app.session.login(username="admin", password="secret", first_time_open_homepage=True)
+    app.session.login(username="admin", password="secret")
     app.user.del_first_user()
     app.session.logout()
 
