@@ -7,11 +7,9 @@ class SessionHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("Logout").click()
         wd.find_element_by_name("user")
-    #   Костыль для бага невыполнения logout в Firefox
 
     def login(self, username, password):
         wd = self.app.wd
-        self.app.open_home_page()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys(username)
         wd.find_element_by_name("pass").clear()
@@ -24,13 +22,14 @@ class SessionHelper:
 
     def is_logged_in(self):
         wd = self.app.wd
-        return len(wd.find_elements_by_xpath("//input[@value='Login']")) > 0
+        return len(wd.find_elements_by_xpath("//input[@value='Login']")) == 0
 
     def is_logged_in_as(self, username):
         wd = self.app.wd
         return wd.find_element_by_xpath("//div[@id='top']/form/b").text == "("+username+")"
 
     def ensure_login(self, username, password):
+        self.app.open_home_page()
         if self.is_logged_in():
             if self.is_logged_in_as(username):
                 return

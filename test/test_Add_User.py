@@ -3,7 +3,7 @@ from model.userinfo import UserInfo
 
 
 def test_add_user(app):
-    app.user.create(UserInfo(firstname="fdsafsadf3", middlename="fdgdsgffd4", lastname="adgkasdfl5"))
+    app.user.create(UserInfo(firstname="fds7773", middlename="fdgds7774", lastname="adgkasdfl5"))
 
 
 
