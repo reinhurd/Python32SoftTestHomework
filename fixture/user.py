@@ -1,3 +1,6 @@
+from model.userinfo import UserInfo
+
+
 class UserHelper:
 
     def __init__(self, app):
@@ -33,9 +36,6 @@ class UserHelper:
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
         wd.find_element_by_name("firstname").send_keys(userinfo.firstname)
-        wd.find_element_by_name("middlename").click()
-        wd.find_element_by_name("middlename").clear()
-        wd.find_element_by_name("middlename").send_keys(userinfo.middlename)
         wd.find_element_by_name("lastname").click()
         wd.find_element_by_name("lastname").clear()
         wd.find_element_by_name("lastname").send_keys(userinfo.lastname)
@@ -44,6 +44,17 @@ class UserHelper:
         wd = self.app.wd
         self.app.open_home_page()
         return len(wd.find_elements_by_name("selected[]"))
+
+    def get_users_list(self):
+        wd = self.app.wd
+        self.app.open_home_page()
+        users = []
+        for element in wd.find_elements_by_css_selector("tr[name]"):
+            firstname = element.find_element_by_css_selector("td:nth-child(3)").text
+            lastname = element.find_element_by_css_selector("td:nth-child(2)").text
+            id = element.find_element_by_name("selected[]").get_attribute("value")
+            users.append(UserInfo(firstname=firstname, lastname=lastname, id=id))
+        return users
 
 
 
