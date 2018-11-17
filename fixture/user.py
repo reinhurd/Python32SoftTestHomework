@@ -18,21 +18,35 @@ class UserHelper:
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
         self.users_cache = None
 
+    def select_user_by_index(self, index):
+        wd = self.app.wd
+        wd.find_elements_by_name("selected[]")[index].click()
+
     def mod_first_user(self, userinfo):
+        self.mod_user_by_index(0, userinfo)
+        self.users_cache = None
+
+    def mod_user_by_index(self, index, userinfo):
         wd = self.app.wd
         self.app.open_home_page()
+        self.select_user_by_index(index)
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
         self.enter_text(userinfo)
         wd.find_element_by_name("update").click()
         self.users_cache = None
 
-    def del_first_user(self):
+    def del_user_by_index(self, index):
         wd = self.app.wd
         self.app.open_home_page()
-        wd.find_element_by_name("selected[]").click()
+        self.select_user_by_index(index)
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         wd.switch_to.alert.accept()
+        wd.implicitly_wait(1)
         wd.find_element_by_xpath("//a[contains(text(),'home')]").click()
+        self.users_cache = None
+
+    def del_first_user(self):
+        self.del_user_by_index(0)
         self.users_cache = None
 
     def enter_text(self, userinfo):
