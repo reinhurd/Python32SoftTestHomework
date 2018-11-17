@@ -30,6 +30,7 @@ class UserHelper:
         wd.find_element_by_name("selected[]").click()
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         wd.switch_to.alert.accept()
+        wd.find_element_by_xpath("//a[contains(text(),'home')]").click()
 
     def enter_text(self, userinfo):
         wd = self.app.wd
@@ -49,7 +50,7 @@ class UserHelper:
         wd = self.app.wd
         self.app.open_home_page()
         users = []
-        for element in wd.find_elements_by_css_selector("tr[name]"):
+        for element in wd.find_elements_by_css_selector("tr[name=entry]"):
             firstname = element.find_element_by_css_selector("td:nth-child(3)").text
             lastname = element.find_element_by_css_selector("td:nth-child(2)").text
             id = element.find_element_by_name("selected[]").get_attribute("value")
