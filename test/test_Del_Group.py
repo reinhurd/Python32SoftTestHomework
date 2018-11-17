@@ -4,5 +4,12 @@ from model.group import Group
 def test_del_group(app):
     if app.group.count() == 0:
         app.group.create(Group(name="Test", header="", footer=""))
+    old_groups = app.group.get_group_list()
     app.group.del_first_group()
-    app.open_home_page()
+    new_group = app.group.get_group_list()
+    assert len(old_groups) - 1 == len(new_group)
+    old_groups[0:1] = []
+    assert old_groups == new_group
+
+
+    # app.open_home_page()
