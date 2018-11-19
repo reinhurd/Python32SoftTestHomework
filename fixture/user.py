@@ -22,6 +22,10 @@ class UserHelper:
         wd = self.app.wd
         wd.find_elements_by_name("selected[]")[index].click()
 
+    def select_user_by_index_for_mod(self, index):
+        wd = self.app.wd
+        wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
+
     def mod_first_user(self, userinfo):
         self.mod_user_by_index(0, userinfo)
         self.users_cache = None
@@ -29,8 +33,7 @@ class UserHelper:
     def mod_user_by_index(self, index, userinfo):
         wd = self.app.wd
         self.app.open_home_page()
-        self.select_user_by_index(index)
-        wd.find_element_by_xpath("//img[@alt='Edit']").click()
+        self.select_user_by_index_for_mod(index)
         self.enter_text(userinfo)
         wd.find_element_by_name("update").click()
         self.users_cache = None
