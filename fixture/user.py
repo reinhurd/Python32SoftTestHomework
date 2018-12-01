@@ -55,11 +55,11 @@ class UserHelper:
         wd = self.app.wd
         ##Iterate instance attr:value to fullfill data of new contact
         for params, value in userinfo.__dict__.items():
-            if value is not None:
+            if value is not None \
+                    and params != "all_phones_from_homepage" and params != "all_emails" and params != "id":
                 wd.find_element_by_name(params).click()
                 wd.find_element_by_name(params).clear()
                 wd.find_element_by_name(params).send_keys(value)
-
 
     def count(self):
         wd = self.app.wd
@@ -78,10 +78,10 @@ class UserHelper:
                 firstname = cells[2].text
                 lastname = cells[1].text
                 id = element.find_element_by_name("selected[]").get_attribute("value")
-                all_phones = cells[5].text.splitlines()
+                all_phones = cells[5].text
+                all_emails = cells[4].text
                 self.users_cache.append(UserInfo(firstname=firstname, lastname=lastname,
-                                                 homephone=all_phones[0], mobilephone=all_phones[1],
-                                                 workphone=all_phones[2], phone2=all_phones[3], id=id))
+                                                 all_phones_from_homepage=all_phones, all_emails=all_emails, id=id))
         return list(self.users_cache)
 
     def get_user_info_from_edit_page(self, index):
@@ -94,5 +94,8 @@ class UserHelper:
         mobile = wd.find_element_by_name("mobile").get_attribute("value")
         work = wd.find_element_by_name("work").get_attribute("value")
         phone2 = wd.find_element_by_name("phone2").get_attribute("value")
+        email = wd.find_element_by_name("email").get_attribute("value")
+        email2 = wd.find_element_by_name("email2").get_attribute("value")
+        email3 = wd.find_element_by_name("email3").get_attribute("value")
         return UserInfo(firstname=firstname, lastname=lastname, homephone=home, mobilephone=mobile, workphone=work,
-                        phone2=phone2, id=id)
+                        phone2=phone2, email=email, email2=email2, email3=email3, id=id)

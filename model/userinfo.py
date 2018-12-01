@@ -5,7 +5,8 @@ class UserInfo:
     Fullfill user info on create-new-users page.
     """
     def __init__(self, firstname=None, lastname=None, homephone=None, mobilephone=None, workphone=None, fax=None,
-                 phone2=None, email=None, email2=None, email3=None, id=None):
+                 phone2=None, email=None, email2=None, email3=None, id=None,
+                 all_phones_from_homepage=None, all_emails=None):
         self.firstname = firstname
         self.lastname = lastname
         self.id = id
@@ -17,6 +18,8 @@ class UserInfo:
         self.email = email
         self.email2 = email2
         self.email3 = email3
+        self.all_phones_from_homepage = all_phones_from_homepage
+        self.all_emails = all_emails
 
 
     def __repr__(self):
