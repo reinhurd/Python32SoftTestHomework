@@ -1,6 +1,5 @@
 from model.userinfo import UserInfo
 
-
 class UserHelper:
 
     def __init__(self, app):
@@ -75,11 +74,25 @@ class UserHelper:
             self.app.open_home_page()
             self.users_cache = []
             for element in wd.find_elements_by_css_selector("tr[name=entry]"):
-                firstname = element.find_element_by_css_selector("td:nth-child(3)").text
-                lastname = element.find_element_by_css_selector("td:nth-child(2)").text
+                cells = element.find_elements_by_tag_name("td")
+                firstname = cells[2].text
+                lastname = cells[1].text
                 id = element.find_element_by_name("selected[]").get_attribute("value")
-                self.users_cache.append(UserInfo(firstname=firstname, lastname=lastname, id=id))
+                all_phones = cells[5].text.splitlines()
+                self.users_cache.append(UserInfo(firstname=firstname, lastname=lastname,
+                                                 homephone=all_phones[0], mobilephone=all_phones[1],
+                                                 workphone=all_phones[2], phone2=all_phones[3], id=id))
         return list(self.users_cache)
 
-
-
+    def get_user_info_from_edit_page(self, index):
+        wd = self.app.wd
+        self.select_user_by_index_for_mod(index)
+        firstname = wd.find_element_by_name("firstname").get_attribute("value")
+        lastname = wd.find_element_by_name("lastname").get_attribute("value")
+        id = wd.find_element_by_name("id").get_attribute("value")
+        home = wd.find_element_by_name("home").get_attribute("value")
+        mobile = wd.find_element_by_name("mobile").get_attribute("value")
+        work = wd.find_element_by_name("work").get_attribute("value")
+        phone2 = wd.find_element_by_name("phone2").get_attribute("value")
+        return UserInfo(firstname=firstname, lastname=lastname, homephone=home, mobilephone=mobile, workphone=work,
+                        phone2=phone2, id=id)
