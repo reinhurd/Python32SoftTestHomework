@@ -54,12 +54,13 @@ class UserHelper:
 
     def enter_text(self, userinfo):
         wd = self.app.wd
-        wd.find_element_by_name("firstname").click()
-        wd.find_element_by_name("firstname").clear()
-        wd.find_element_by_name("firstname").send_keys(userinfo.firstname)
-        wd.find_element_by_name("lastname").click()
-        wd.find_element_by_name("lastname").clear()
-        wd.find_element_by_name("lastname").send_keys(userinfo.lastname)
+        ##Iterate instance attr:value to fullfill data of new contact
+        for params, value in userinfo.__dict__.items():
+            if value is not None:
+                wd.find_element_by_name(params).click()
+                wd.find_element_by_name(params).clear()
+                wd.find_element_by_name(params).send_keys(value)
+
 
     def count(self):
         wd = self.app.wd
