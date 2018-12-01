@@ -8,8 +8,7 @@ def test_phones_and_emails_on_homepage(app):
 
 
 def clear(s):
-    ##Clear all non-Digits except plus sign
-    pattern = r'[^\d\+]'
+    pattern = r'[() -]'
     return re.sub(pattern, "", s)
 
 
