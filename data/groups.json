@@ -1,20 +1,23 @@
 [
   {
-    "name": "nameEU",
-    "header": "headerdzSWZyp1MvBBi5ln37x",
-    "footer": "footerQqbrhYEgQ7HB",
-    "id": null
+    "py/object": "model.group.Group",
+    "footer": "footerzJr59SPIQsX1X",
+    "header": "headerpuYoVT4Kr3U74p",
+    "id": null,
+    "name": "nameKUAFR"
   },
   {
-    "name": "namec3",
-    "header": "headeruBn4PjIrnWSu1oT",
-    "footer": "footer0mDfi6IKkbKwFLCtFz",
-    "id": null
+    "py/object": "model.group.Group",
+    "footer": "footerSkNDDB83Q",
+    "header": "headerXH0h9bra",
+    "id": null,
+    "name": "nameT"
   },
   {
-    "name": "nameWzr2",
-    "header": "headerOtBgrv0sfoIj",
-    "footer": "footeroDyvo3EL0yfz",
-    "id": null
+    "py/object": "model.group.Group",
+    "footer": "footerG4",
+    "header": "headeryoQ",
+    "id": null,
+    "name": "names"
   }
 ]
