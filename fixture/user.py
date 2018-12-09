@@ -21,6 +21,10 @@ class UserHelper:
         wd = self.app.wd
         wd.find_elements_by_name("selected[]")[index].click()
 
+    def select_user_by_id(self, id):
+        wd = self.app.wd
+        wd.find_element_by_css_selector("input[value='%s']" % id).click()
+
     def select_user_by_index_for_mod(self, index):
         wd = self.app.wd
         wd.find_elements_by_xpath("//img[@alt='Edit']")[index].click()
@@ -37,10 +41,28 @@ class UserHelper:
         wd.find_element_by_name("update").click()
         self.users_cache = None
 
+    def mod_user_by_id(self, id, userinfo):
+        wd = self.app.wd
+        self.app.open_home_page()
+        self.select_user_by_id(id)
+        self.enter_text(userinfo)
+        wd.find_element_by_name("update").click()
+        self.users_cache = None
+
     def del_user_by_index(self, index):
         wd = self.app.wd
         self.app.open_home_page()
         self.select_user_by_index(index)
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
+        wd.switch_to.alert.accept()
+        wd.implicitly_wait(1)
+        wd.find_element_by_xpath("//a[contains(text(),'home')]").click()
+        self.users_cache = None
+
+    def del_user_by_id(self, id):
+        wd = self.app.wd
+        self.app.open_home_page()
+        self.select_user_by_id(id)
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         wd.switch_to.alert.accept()
         wd.implicitly_wait(1)
