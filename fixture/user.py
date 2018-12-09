@@ -64,7 +64,7 @@ class UserHelper:
         self.app.open_home_page()
         self.select_user_by_id(id)
         wd.find_element_by_xpath("//input[@value='Delete']").click()
-        wd.switch_to.alert.accept()
+        #wd.switch_to.alert.accept()
         wd.implicitly_wait(1)
         wd.find_element_by_xpath("//a[contains(text(),'home')]").click()
         self.users_cache = None
