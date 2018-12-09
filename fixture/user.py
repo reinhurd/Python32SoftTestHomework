@@ -23,7 +23,7 @@ class UserHelper:
 
     def select_user_by_id(self, id):
         wd = self.app.wd
-        wd.find_element_by_css_selector("input[value='%s']" % id).click()
+        wd.find_element_by_xpath('//a[contains(@href, "edit.php?id=%s")]' % id).click()
 
     def select_user_by_index_for_mod(self, index):
         wd = self.app.wd

@@ -2,7 +2,7 @@ from model.userinfo import UserInfo
 import random
 
 
-def test_mod_user_by_index(app, db, check_ui):
+def test_mod_user_by_id(app, db, check_ui):
     if app.user.count() == 0:
         app.user.create(UserInfo(firstname="Test", lastname="TEST"))
     old_users = db.get_userinfo_list()
