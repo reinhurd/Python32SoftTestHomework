@@ -49,6 +49,26 @@ class UserHelper:
         wd.find_element_by_name("update").click()
         self.users_cache = None
 
+    def add_user_to_group(self, id, group_id):
+        wd = self.app.wd
+        self.app.open_home_page()
+        wd.find_element_by_xpath('//input[@id="%s"]' % id).click()
+        wd.find_element_by_xpath('//select[@name = "to_group"]').click()
+        wd.find_elements_by_css_selector('select[name="to_group"] > option[value="%s"]' % group_id)[0].click()
+        wd.find_element_by_xpath('//input[@name="add"]').click()
+        self.users_cache = None
+
+    def del_user_from_group(self, id, group_id):
+        wd = self.app.wd
+        self.app.open_home_page()
+        wd.find_element_by_xpath('//select[@name="group"]').click()
+        wd.find_element_by_xpath('//option[@value="%s"]' % group_id).click()
+        wd.find_element_by_xpath('//input[@id="%s"]' % id).click()
+        wd.find_element_by_xpath('//input[@name="remove"]').click()
+        self.users_cache = None
+
+        self.users_cache = None
+
     def del_user_by_index(self, index):
         wd = self.app.wd
         self.app.open_home_page()
