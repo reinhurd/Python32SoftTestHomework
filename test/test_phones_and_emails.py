@@ -1,15 +1,24 @@
 import re
-
-def test_phones_and_emails_on_homepage(app):
-    user_from_homepage = app.user.get_users_list()[0]
-    user_from_editpage = app.user.get_user_info_from_edit_page(0)
-    assert user_from_homepage.all_phones_from_homepage == merge_phones_like_on_homepage(user_from_editpage)
-    assert user_from_homepage.all_emails == merge_email_like_on_homepage(user_from_editpage)
+from model.userinfo import UserInfo
 
 
+def test_phones_on_homepage(app, db):
+    users_from_homepage = app.user.get_users_list()
+    users_from_db = db.get_userinfo_tel_list()
+    assert sorted(users_from_homepage, key=UserInfo.id_or_max) == sorted(users_from_db, key=UserInfo.id_or_max)
+
+
+def test_mail_on_homepage(app, db):
+    users_from_homepage = app.user.get_users_list()
+    users_from_db = db.get_userinfo_mail_list()
+    assert sorted(users_from_homepage, key=UserInfo.id_or_max) == sorted(users_from_db, key=UserInfo.id_or_max)
+
+
+"""
 def clear(s):
-    pattern = r'[() -]'
-    return re.sub(pattern, "", s)
+    return s
+    #pattern = r'[() -]'
+    #return re.sub(pattern, "", s)
 
 
 def merge_phones_like_on_homepage(contact):
@@ -23,3 +32,4 @@ def merge_email_like_on_homepage(contact):
     return "\n".join(filter(lambda x: x != "",
                      filter(lambda x: x is not None,
                             [contact.email, contact.email2, contact.email3])))
+"""
