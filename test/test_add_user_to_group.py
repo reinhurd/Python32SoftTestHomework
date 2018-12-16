@@ -6,6 +6,8 @@ from model.group import Group
 def test_add_user_to_group(app, orm):
     if app.user.count() == 0:
         app.user.create(UserInfo(firstname="Test", lastname="TEST"))
+    if app.group.count() == 0:
+        app.group.create(Group(name="Test", header="", footer=""))
     all_users = orm.get_userinfo_list()
     user = random.choice(all_users)
 
