@@ -5,16 +5,20 @@ from model.userinfo import UserInfo
 def test_phones_on_homepage(app, db):
     users_from_homepage = app.user.get_users_list()
     users_from_db = db.get_userinfo_tel_list()
-    assert sorted(users_from_homepage, key=UserInfo.id_or_max) == sorted(users_from_db, key=UserInfo.id_or_max)
+    for element in users_from_homepage:
+        user = users_from_db.index(element)
+        assert element.all_phones_from_homepage == merge_phones_like_on_homepage(users_from_db[user])
 
 
 def test_mail_on_homepage(app, db):
     users_from_homepage = app.user.get_users_list()
     users_from_db = db.get_userinfo_mail_list()
-    assert sorted(users_from_homepage, key=UserInfo.id_or_max) == sorted(users_from_db, key=UserInfo.id_or_max)
+    for element in users_from_homepage:
+        user = users_from_db.index(element)
+        assert element.all_emails == merge_email_like_on_homepage(users_from_db[user])
 
 
-"""
+
 def clear(s):
     return s
     #pattern = r'[() -]'
@@ -32,4 +36,3 @@ def merge_email_like_on_homepage(contact):
     return "\n".join(filter(lambda x: x != "",
                      filter(lambda x: x is not None,
                             [contact.email, contact.email2, contact.email3])))
-"""
