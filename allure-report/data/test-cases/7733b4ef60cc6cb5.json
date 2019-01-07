@@ -1,0 +1,138 @@
+{
+  "uid" : "7733b4ef60cc6cb5",
+  "name" : "test_del_user_from_group",
+  "fullName" : "test.test_del_user_from_group#test_del_user_from_group",
+  "historyId" : "a9726a0a65a3ecf1926d4db68d91e7bb",
+  "time" : {
+    "start" : 1546898087527,
+    "stop" : 1546898089114,
+    "duration" : 1587
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "orm",
+    "time" : {
+      "start" : 1546898080266,
+      "stop" : 1546898080306,
+      "duration" : 40
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "stop",
+    "time" : {
+      "start" : 1546898054022,
+      "stop" : 1546898054022,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1546898086324,
+      "stop" : 1546898087526,
+      "duration" : 1202
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3dae5e2e96fc23cb",
+      "name" : "log",
+      "source" : "3dae5e2e96fc23cb.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "4ebac86cb62d26d9",
+      "name" : "stdout",
+      "source" : "4ebac86cb62d26d9.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "fad8c3fe3d23ae54",
+      "name" : "stderr",
+      "source" : "fad8c3fe3d23ae54.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1546898092386,
+      "stop" : 1546898094339,
+      "duration" : 1953
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_del_user_from_group"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M2JVPG0"
+  }, {
+    "name" : "thread",
+    "value" : "98288-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_del_user_from_group"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7733b4ef60cc6cb5.json",
+  "parameterValues" : [ ]
+}

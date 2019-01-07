@@ -1,0 +1,168 @@
+{
+  "uid" : "e89616cb8980a632",
+  "name" : "test_mod_group_by_id",
+  "fullName" : "test.test_Mod_Group#test_mod_group_by_id",
+  "historyId" : "50c2be6cf4b579a830ac35ddb46bd8a3",
+  "time" : {
+    "start" : 1546898077192,
+    "stop" : 1546898078357,
+    "duration" : 1165
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "check_ui",
+    "time" : {
+      "start" : 1546898077191,
+      "stop" : 1546898077191,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1546898076002,
+      "stop" : 1546898077191,
+      "duration" : 1189
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "db",
+    "time" : {
+      "start" : 1546898054022,
+      "stop" : 1546898054028,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "stop",
+    "time" : {
+      "start" : 1546898054022,
+      "stop" : 1546898054022,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d8e0c115312cd5b5",
+      "name" : "log",
+      "source" : "d8e0c115312cd5b5.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "be82a36098e0af51",
+      "name" : "stdout",
+      "source" : "be82a36098e0af51.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "69fb9851edbfa59d",
+      "name" : "stderr",
+      "source" : "69fb9851edbfa59d.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1546898092382,
+      "stop" : 1546898092382,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1546898092386,
+      "stop" : 1546898094339,
+      "duration" : 1953
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_Mod_Group"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M2JVPG0"
+  }, {
+    "name" : "thread",
+    "value" : "98288-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_Mod_Group"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e89616cb8980a632.json",
+  "parameterValues" : [ ]
+}

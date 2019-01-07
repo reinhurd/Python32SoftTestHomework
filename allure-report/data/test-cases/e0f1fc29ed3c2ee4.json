@@ -1,0 +1,178 @@
+{
+  "uid" : "e0f1fc29ed3c2ee4",
+  "name" : "test_del_some_group",
+  "fullName" : "test.test_Del_Group#test_del_some_group",
+  "historyId" : "b5d4e25504ddf763ab9cd4e761870d70",
+  "time" : {
+    "start" : 1546898968312,
+    "stop" : 1546898968720,
+    "duration" : 408
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "db",
+    "time" : {
+      "start" : 1546898946020,
+      "stop" : 1546898946026,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1546898967067,
+      "stop" : 1546898968311,
+      "duration" : 1244
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "stop",
+    "time" : {
+      "start" : 1546898946020,
+      "stop" : 1546898946020,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "check_ui",
+    "time" : {
+      "start" : 1546898968311,
+      "stop" : 1546898968311,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b052270318757c85",
+      "name" : "log",
+      "source" : "b052270318757c85.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "9524e15b1500de83",
+      "name" : "stdout",
+      "source" : "9524e15b1500de83.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "5fbc5187c74f6bbb",
+      "name" : "stderr",
+      "source" : "5fbc5187c74f6bbb.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1546898987033,
+      "stop" : 1546898987033,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1546898987038,
+      "stop" : 1546898988991,
+      "duration" : 1953
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_Del_Group"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M2JVPG0"
+  }, {
+    "name" : "thread",
+    "value" : "64124-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_Del_Group"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9181911869fa4bc2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1546898074074,
+        "stop" : 1546898074515,
+        "duration" : 441
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e0f1fc29ed3c2ee4.json",
+  "parameterValues" : [ ]
+}

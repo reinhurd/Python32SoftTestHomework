@@ -1,0 +1,171 @@
+{
+  "uid" : "eb295dc25b6fea7b",
+  "name" : "test_add_user[None:firstnamepahOlktXJ:lastnameTZ]",
+  "fullName" : "test.test_Add_User#test_add_user[None:firstnamepahOlktXJ:lastnameTZ]",
+  "historyId" : "254fe288f461a39c76f75c4d889eb035",
+  "time" : {
+    "start" : 1546898070320,
+    "stop" : 1546898072795,
+    "duration" : 2475
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "db",
+    "time" : {
+      "start" : 1546898054022,
+      "stop" : 1546898054028,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1546898069018,
+      "stop" : 1546898070319,
+      "duration" : 1301
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "stop",
+    "time" : {
+      "start" : 1546898054022,
+      "stop" : 1546898054022,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "check_ui",
+    "time" : {
+      "start" : 1546898070319,
+      "stop" : 1546898070319,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "efed572e0d965ed8",
+      "name" : "log",
+      "source" : "efed572e0d965ed8.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "e7e0800ae935dbaa",
+      "name" : "stdout",
+      "source" : "e7e0800ae935dbaa.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "bd5aacd8d63599a",
+      "name" : "stderr",
+      "source" : "bd5aacd8d63599a.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1546898092382,
+      "stop" : 1546898092382,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1546898092386,
+      "stop" : 1546898094339,
+      "duration" : 1953
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_Add_User"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M2JVPG0"
+  }, {
+    "name" : "thread",
+    "value" : "98288-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_Add_User"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "json_userinfos",
+    "value" : "None:firstnamepahOlktXJ:lastnameTZ"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "eb295dc25b6fea7b.json",
+  "parameterValues" : [ "None:firstnamepahOlktXJ:lastnameTZ" ]
+}

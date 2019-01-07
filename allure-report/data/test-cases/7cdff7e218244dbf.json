@@ -1,0 +1,153 @@
+{
+  "uid" : "7cdff7e218244dbf",
+  "name" : "test_mail_on_homepage",
+  "fullName" : "test.test_phones_and_emails#test_mail_on_homepage",
+  "historyId" : "2f50bf05447d91aa2eb5ee2c87585a90",
+  "time" : {
+    "start" : 1546898092374,
+    "stop" : 1546898092376,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "db",
+    "time" : {
+      "start" : 1546898054022,
+      "stop" : 1546898054028,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "stop",
+    "time" : {
+      "start" : 1546898054022,
+      "stop" : 1546898054022,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1546898091164,
+      "stop" : 1546898092374,
+      "duration" : 1210
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ac896b8d1f38c5f",
+      "name" : "log",
+      "source" : "ac896b8d1f38c5f.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "367cfb41e4dbdce9",
+      "name" : "stdout",
+      "source" : "367cfb41e4dbdce9.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "917ad8e1ff7d8b8e",
+      "name" : "stderr",
+      "source" : "917ad8e1ff7d8b8e.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1546898092382,
+      "stop" : 1546898092382,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1546898092386,
+      "stop" : 1546898094339,
+      "duration" : 1953
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_phones_and_emails"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M2JVPG0"
+  }, {
+    "name" : "thread",
+    "value" : "98288-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_phones_and_emails"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7cdff7e218244dbf.json",
+  "parameterValues" : [ ]
+}

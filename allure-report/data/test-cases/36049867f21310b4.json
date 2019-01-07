@@ -1,0 +1,181 @@
+{
+  "uid" : "36049867f21310b4",
+  "name" : "test_add_user[None:firstnamepahOlktXJ:lastnameTZ]",
+  "fullName" : "test.test_Add_User#test_add_user[None:firstnamepahOlktXJ:lastnameTZ]",
+  "historyId" : "254fe288f461a39c76f75c4d889eb035",
+  "time" : {
+    "start" : 1546898964621,
+    "stop" : 1546898967044,
+    "duration" : 2423
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "db",
+    "time" : {
+      "start" : 1546898946020,
+      "stop" : 1546898946026,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "check_ui",
+    "time" : {
+      "start" : 1546898964621,
+      "stop" : 1546898964621,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "stop",
+    "time" : {
+      "start" : 1546898946020,
+      "stop" : 1546898946020,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1546898963301,
+      "stop" : 1546898964620,
+      "duration" : 1319
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b913bdc69b3b8787",
+      "name" : "log",
+      "source" : "b913bdc69b3b8787.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "a27227f3d7eb5af1",
+      "name" : "stdout",
+      "source" : "a27227f3d7eb5af1.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "8b0dc153ad4150e4",
+      "name" : "stderr",
+      "source" : "8b0dc153ad4150e4.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1546898987033,
+      "stop" : 1546898987033,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1546898987038,
+      "stop" : 1546898988991,
+      "duration" : 1953
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_Add_User"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-M2JVPG0"
+  }, {
+    "name" : "thread",
+    "value" : "64124-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_Add_User"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "json_userinfos",
+    "value" : "None:firstnamepahOlktXJ:lastnameTZ"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "eb295dc25b6fea7b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1546898070320,
+        "stop" : 1546898072795,
+        "duration" : 2475
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "36049867f21310b4.json",
+  "parameterValues" : [ "None:firstnamepahOlktXJ:lastnameTZ" ]
+}
