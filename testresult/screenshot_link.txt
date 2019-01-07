@@ -1,0 +1,6 @@
+http://prntscr.com/m4782v - настройки для проекта запуска тестов из папки test
+http://prntscr.com/m479p5 - прохождение тестов из папки test
+
+http://prntscr.com/m47ais - настройки для проекта запуска тестов из папки bdd
+http://prntscr.com/m47b2r - cucumber report для тестов из папки bdd
+http://prntscr.com/m47be2 - cucumber test result для тестов из папки bdd
